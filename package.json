@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "A monorepo boilerplate using pnpm, turborepo, dumi, and changesets",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jtrust/monorepo-starter.git"
+  },
   "keywords": [
     "monorepo",
     "pnpm",
