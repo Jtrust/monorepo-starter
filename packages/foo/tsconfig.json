@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@tao/foo": ["./src"] // 根据实际情况调整路径
+        }
+    },
+    "include": ["src", "demo"],
+    "exclude": ["node_modules", ".turbo", "es", "cjs"]
+}

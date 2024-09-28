@@ -1,0 +1,23 @@
+{
+  "name": "@tao/foo",
+  "version": "0.0.1",
+  "description": "demo",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "es",
+    "cjs"
+  ],
+  "scripts": {
+    "build": "rm -rf cjs es && rollup -c ../../rollup.config.js --bundleConfigAsCjs",
+    "lint": "eslint \"src/**/*.ts*\" \"demo/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "npx jest --passWithNoTests"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "antd": ">=4"
+  }
+}

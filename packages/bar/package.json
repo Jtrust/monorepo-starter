@@ -1,0 +1,27 @@
+{
+  "name": "@tao/bar",
+  "version": "0.0.1",
+  "description": "引用其它子包作为依赖的示例",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "es",
+    "cjs"
+  ],
+  "scripts": {
+    "build": "rm -rf cjs es && rollup -c ../../rollup.config.js --bundleConfigAsCjs",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "npx jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@tao/foo": "workspace:^"
+  },
+  "peerDependencies": {
+    "@tao/foo": "workspace:^",
+    "react": ">=17",
+    "antd": ">=4"
+  }
+}

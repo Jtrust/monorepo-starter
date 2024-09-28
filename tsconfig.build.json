@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "declaration": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "baseUrl": ".",
+        "strict": true // 启用所有严格类型检查选项
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}

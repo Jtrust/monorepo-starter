@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.build.json", // 继承根目录的配置
+  "include": ["src"],  // 指定当前子包的src路径
+}

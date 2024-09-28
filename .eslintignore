@@ -1,0 +1,13 @@
+dist
+es
+cjs
+docs
+.dumi
+.husky
+eslintrc.js
+node_modules
+tsconfig.json
+**/*.config.js
+**/*.config.ts
+.d.ts
+.*.js
